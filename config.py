@@ -14,7 +14,7 @@ def generate_hash():
     HASH = hashlib.md5((TIMESTAMP+API_PRIVATE+API_PUBLIC).encode()).hexdigest()
     return TIMESTAMP, HASH
 
-CHARACTER_ID = "1009362"  #iceman
+CHARACTER_ID = "1009362"  #Iceman
 COMIC_ID = "13881"
 
 API_PRIVATE = os.environ["API_PRIVATE"]

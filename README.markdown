@@ -2,6 +2,7 @@ ABOUT
 
 This one page app retrieves the information about one of my favourite X-Men stories featuring Bobby Drake (aka: Iceman). It was published in January 1997 in Uncanny X-Men 340. The page shows the description of the story and the characters that appear in this issue.
 
+It is a simple programme that uses the Marvel's developers API, written in python and flask in the backend.
 
 
 INSTALLATION
