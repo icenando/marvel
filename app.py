@@ -15,7 +15,6 @@ def get_url_info(url: str) -> dict:
         result.raise_for_status()
     except requests.exceptions.HTTPError as err:
         raise SystemExit(err)
-        
     result = (result.json())
     return result
 
@@ -32,7 +31,6 @@ def get_characters(story: dict) -> dict:
     chars_dict = {}
     for hero in story['characters']['items']:
         chars_dict[hero['name']] = char_img(hero['resourceURI'].split('/')[-1])
-    
     return chars_dict
 
 
@@ -50,7 +48,6 @@ def home() -> None:
     # of the characters that features in the story
     characters = get_characters(story)
 
-    #Characters pictures
     return render_template(
         'home.html', 
         description=description, 
