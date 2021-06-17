@@ -1,24 +1,43 @@
 <!-- 
 You should supply instructions on how to install and run your project.
 -->
-
+<!DOCTYPE html>
 <html>
-
     <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+            #characters {
+                max-width: 1000px;
+                margin: auto;
+            }
+            h2, h5 {
+                text-align: center;
+                font-family: 'Comic Neue';
+            }
+            article {
+                border: 5px;
+                font-style: italic;
+                max-width: 33%;
+                display: inline-block;
+                border-radius: 10px;
+                border-style:solid;
+                margin-bottom: 5px;
+            }
+        </style>
     </head>
-    
     <body>
-
-        <h2>Description: {{ description }}</h2>
+        <h2>{{ description }}</h2>
         <br>
+        <section id='characters'>
         {%  for i in characters  %}
-            <h2>{{ i }}</h2>
-            <img src= "{{ characters[i] }}"></img>
+            <article>
+                <h2>{{ i }}</h2>
+                <img src= "{{ characters[i] }}"></img>
+            </article>
         {%  endfor  %}
+        </section>
         <br>
         <br>
-        {{  attribution  }}
-
+        <h5>{{  attribution  }}</h5>
     </body>
-
 </html>

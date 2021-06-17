@@ -6,6 +6,7 @@ import time
 import hashlib
 from flask import Flask
 
+
 app = Flask(__name__)
 
 def generate_hash():
@@ -22,4 +23,3 @@ API_PUBLIC = os.environ["API_PUBLIC"]
 
 TIMESTAMP, HASH = generate_hash()
 MARVEL_URL = f"https://gateway.marvel.com:443/v1/public/comics/{COMIC_ID}/stories?ts={TIMESTAMP}&apikey={API_PUBLIC}&hash={HASH}"
-print(MARVEL_URL)

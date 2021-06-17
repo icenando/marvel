@@ -4,7 +4,6 @@
 
 import requests
 from config import MARVEL_URL, generate_hash, app, API_PUBLIC
-from pprint import pprint
 from flask import render_template
 
 
@@ -59,4 +58,3 @@ def home() -> None:
 
 if __name__ == "__main__":
     app.run()
-    # home()
