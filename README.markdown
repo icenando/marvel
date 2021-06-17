@@ -4,7 +4,6 @@ This one page app retrieves the information about one of my favourite X-Men stor
 
 It is a simple programme that uses the Marvel's developers API, written in python and flask in the backend.
 
-
 INSTALLATION
 
 1. Open a developer account at[https://developer.marvel.com]() .
@@ -21,10 +20,15 @@ INSTALLATION
    python3 -m venv .venv
    . .venv/bin/activate
    ```
-6. Install the necessary packages listed in requirements.txt using pip :
+6. Install the necessary packages listed in requirements.txt using pip
 
    ```
    pip install -r requirements.txt
+   ```
+7. Now you need to export the public and private API keys that you received when you joined Marvel as environment variables, as follows:
+   ```
+   export API_PUBLIC='your_public_API_key_goes_here'
+   export API_PRIVATE='your_private_API_key_goes_here'
    ```
 7. Run the code:
 
