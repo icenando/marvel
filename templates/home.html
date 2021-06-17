@@ -20,14 +20,13 @@ The result of your test should be delivered on a repository on Github, Bitbucket
 
 <html>
     <head>
-
     </head>
     <body>
         <h2>Description: {{ description }}</h2>
         <br>
-        <br>
         {%  for i in characters  %}
-            {{ characters[i] }}<br>
+            <h2>{{ i }}</h2>
+            <img src= "{{ characters[i] }}"></img><br>
         {%  endfor  %}
         <br>
         <br>
