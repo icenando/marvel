@@ -10,8 +10,12 @@ from flask import render_template
 
 
 def get_url_info(url: str) -> dict:
-    result = requests.get(url)
-    result.raise_for_status()
+    try:
+        result = requests.get(url)
+        result.raise_for_status()
+    except requests.exceptions.HTTPError as err:
+        raise SystemExit(err)
+        
     result = (result.json())
     return result
 

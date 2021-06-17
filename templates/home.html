@@ -1,12 +1,5 @@
 <!-- 
 
-Your task is to generate an HTML page that lists the characters from a Marvel-story.
-
-Using the Marvel API [http://developer.marvel.com/docs], pick a random story featuring your favourite character (perhaps The Hulk?). Generate an HTML page with the following characteristics:
-
-* The story's description
-* A list of names and pictures of the characters that features in the story
-* The Marvel attribution text
 
 We are not too fussy about the layout or design of the generated HTML page, but the HTML itself should be well-formatted.
 
@@ -19,17 +12,22 @@ The result of your test should be delivered on a repository on Github, Bitbucket
 -->
 
 <html>
+
     <head>
     </head>
+    
     <body>
+
         <h2>Description: {{ description }}</h2>
         <br>
         {%  for i in characters  %}
             <h2>{{ i }}</h2>
-            <img src= "{{ characters[i] }}"></img><br>
+            <img src= "{{ characters[i] }}"></img>
         {%  endfor  %}
         <br>
         <br>
         {{  attribution  }}
+
     </body>
+
 </html>
