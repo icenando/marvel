@@ -23,11 +23,11 @@ The result of your test should be delivered on a repository on Github, Bitbucket
 
     </head>
     <body>
-        {{ description }}
+        <h2>Description: {{ description }}</h2>
         <br>
         <br>
         {%  for i in characters  %}
-            {{ i }}<br>
+            {{ characters[i] }}<br>
         {%  endfor  %}
         <br>
         <br>
