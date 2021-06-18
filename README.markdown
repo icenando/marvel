@@ -43,5 +43,4 @@ INSTALLATION
    ```
 10. You should now see the description of the story at the top of the page, followed by the characters that feature in it (alongside their profile images), and Marvel's attribution text at the bottom of the page.
 
-
-    ![](assets/20210618_111059_Screenshot_2021-06-18 at 11.09.41.png)
+   ![marvel_screenshot](https://github.com/icenando/marvel/blob/assets/20210618_111059_Screenshot_2021-06-18 at 11.09.41.png?raw=true)
