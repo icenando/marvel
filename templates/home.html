@@ -4,25 +4,9 @@ You should supply instructions on how to install and run your project.
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel='stylesheet' href='../static/css/styles.css' type="text/css">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
-            #characters {
-                max-width: 1000px;
-                margin: auto;
-            }
-            h2, h5 {
-                text-align: center;
-                font-family: 'Comic Neue';
-            }
-            article {
-                border: 5px;
-                font-style: italic;
-                max-width: 33%;
-                display: inline-block;
-                border-radius: 10px;
-                border-style:solid;
-                margin-bottom: 5px;
-            }
         </style>
     </head>
     <body>
@@ -32,7 +16,7 @@ You should supply instructions on how to install and run your project.
         {%  for i in characters  %}
             <article>
                 <h2>{{ i }}</h2>
-                <img src= "{{ characters[i] }}"></img>
+                <div class='bg-img' style='background:url({{ characters[i] }})'></div>
             </article>
         {%  endfor  %}
         </section>

@@ -26,18 +26,22 @@ INSTALLATION
    pip install -r requirements.txt
    ```
 7. Now you need to export the public and private API keys that you received when you joined Marvel as environment variables, as follows:
+
    ```
    export API_PUBLIC='your_public_API_key_goes_here'
    export API_PRIVATE='your_private_API_key_goes_here'
    ```
-7. Run the code:
+8. Run the code:
 
    ```
    gunicorn app:app
    ```
-8. Open your browser and enter the following in the address line:
+9. Open your browser and enter the following in the address line:
 
    ```
    localhost:8000
    ```
-9. You should now see the description of the story at the top of the page, followed by the characters that feature in it (alongside their profile images), and Marvel's attribution text at the bottom of the page.
+10. You should now see the description of the story at the top of the page, followed by the characters that feature in it (alongside their profile images), and Marvel's attribution text at the bottom of the page.
+
+
+    ![](assets/20210618_111059_Screenshot_2021-06-18 at 11.09.41.png)
