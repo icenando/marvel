@@ -36,12 +36,12 @@ INSTALLATION
 8. Run the code:
 
    ```
-   gunicorn app:app
+   flask run
    ```
 9. Open your browser and enter the following in the address line:
 
    ```
-   localhost:8000
+   http://127.0.0.1:5000/
    ```
 10. You should now see the description of the story at the top of the page, followed by the characters that feature in it (alongside their profile images), and Marvel's attribution text at the bottom of the page.
 
